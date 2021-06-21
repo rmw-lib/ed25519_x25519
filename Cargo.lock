@@ -127,6 +127,7 @@ version = "0.0.1"
 dependencies = [
  "anyhow",
  "ed25519-dalek-blake3",
+ "rand",
  "x25519-dalek",
 ]
 
@@ -201,6 +202,7 @@ dependencies = [
  "libc",
  "rand_chacha",
  "rand_core 0.6.3",
+ "rand_hc",
 ]
 
 [[package]]
@@ -229,6 +231,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d34f1408f55294453790c48b2f1ebbb1c5b4b7563eb1f418bcfcfdbb06ebb4e7"
 dependencies = [
  "getrandom 0.2.3",
+]
+
+[[package]]
+name = "rand_hc"
+version = "0.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d51e9f596de227fda2ea6c84607f5558e196eeaf43c986b724ba4fb8fdf497e7"
+dependencies = [
+ "rand_core 0.6.3",
 ]
 
 [[package]]
