@@ -1,0 +1,20 @@
+cargo-features = ["edition2021"]
+
+[package]
+name = "ed25519_x25519"
+authors = [ "rmw <i@rmw.link>" ]
+edition = "2021"
+version = "0.0.1"
+license = "AGPL-3.0-or-later"
+description="convert ed25519 to x25519"
+repository = "https://github.com/rmw-lib/ed25519_x25519"
+documentation = "https://docs.rs/ed25519_x25519"
+readme = "README.md"
+
+[dependencies]
+ed25519-dalek-blake3 = "1.0.3"
+x25519-dalek = "1.1.1"
+
+[dev-dependencies]
+anyhow = "1.0.41"
+
