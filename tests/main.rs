@@ -21,7 +21,7 @@ pub fn ed25519_x25519_pk(pk: &Pk) -> PublicKey {
 fn main() -> Result<()> {
   let a_seed = seed();
   let a_e_sk = Sk::from_bytes(&a_seed)?;
-  let a_e_pk = Pk::from(&a_e_sk);
+  let a_e_pk: Pk = (&a_e_sk).into();
   let a_x_pk = ed25519_x25519_pk(&a_e_pk);
   let a_x_sk = StaticSecret::from(*hash(&a_seed).as_bytes());
 
