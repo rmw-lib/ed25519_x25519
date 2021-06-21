@@ -12,8 +12,11 @@ documentation = "https://docs.rs/ed25519_x25519"
 readme = "README.md"
 
 [dependencies]
+blake3 = "0.3.8"
+curve25519-dalek = "3.1.0"
 ed25519-dalek-blake3 = "1.0.3"
 rand = "0.8.4"
+sha2 = "0.9.5"
 x25519-dalek = "1.1.1"
 
 [dev-dependencies]
